@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Armario Abierto - Tu tienda de moda en línea">
+    <title>Armario Abierto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header" role="banner">
+        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="nav-center" role="navigation" aria-label="Menú principal">
+            <a href="#" aria-label="Sección hombres">MEN</a>
+            <a href="#" aria-label="Sección mujeres">WOMEN</a>
+            <a href="#" aria-label="Sección accesorios">ACCESSORIES</a>
+        </nav>
+
+        <div class="logo">
+            <span class="logo-text">Armario Abierto</span>
+            <img src="./imagenes/armario.png" alt="Logo de Armario Abierto">
+        </div>
+
+        <div class="nav-right">
+            <form class="search-box" role="search">
+                <label for="search" class="sr-only">Buscar productos</label>
+                <i class="fas fa-search" aria-hidden="true"></i>
+                <input type="text" id="search" placeholder="Buscar" aria-label="Campo de búsqueda">
+            </form>
+            <a href="#" class="icon-link" aria-label="Favoritos">
+                <i class="far fa-heart"></i>
+            </a>
+            <a href="#" class="icon-link" aria-label="Carrito de compras">
+                <i class="fas fa-shopping-bag"></i>
+            </a>
+        </div>
+    </header>
+
+    <div class="banner" role="complementary">
+        <h2>Devoluciones y entregas gratuitas</h2>
+        <p>Como miembro, tienes envíos y devoluciones gratis en un plazo de 30 días en todos los pedidos.</p>
+    </div>
+
+    <main role="main">
+        <section class="hero" aria-label="Sección principal">
+            <div class="hero-video-container">
+                <video class="hero-video" autoplay muted loop playsinline aria-label="Video promocional de moda">
+                    <source src="FÆW.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">A STYLE GUIDE FOR<br>EVERYONE</h1>
+            </div>
+            <button class="cta-button" aria-label="Comenzar a comprar">COMPRAR</button>
+        </section>
+
+        <section class="audio-section" aria-label="Música de ambiente">
+            <h2 class="sr-only">Música de ambiente</h2>
+            <div class="audio-player">
+                <audio id="background-music">
+                    <source src="ssstik.io_1733445144852.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <button id="toggle-music" class="music-toggle" aria-label="Reproducir música">
+                    <i class="fas fa-music"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="categories" aria-label="Categorías principales">
+            <p class="anuncio" role="status">devoluciones y entregas gratuitas</p>
+            <div class="category-container">
+                <div class="category women" role="article">
+                    <img src="./imagenes/mujer.jpeg" alt="Colección de moda para mujer" class="category-image">
+                    <div class="category-overlay">
+                        <h2>MUJER</h2>
+                    </div>
+                </div>
+                
+                <div class="category men" role="article">
+                    <img src="./imagenes/hombre.jpeg" alt="Colección de moda para hombre" class="category-image">
+                    <div class="category-overlay">
+                        <h2>HOMBRE</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-products" aria-label="Productos destacados">
+            <h2>Productos Destacados</h2>
+            <div class="product-grid">
+                <article class="product-card">
+                    <img src="./imagenes/chaqueta.jpeg" alt="Chaqueta Elegante" loading="lazy">
+                    <div class="product-info">
+                        <h3>Chaqueta Elegante</h3>
+                        <p class="price">$89.99</p>
+                        <button class="add-to-cart" aria-label="Añadir Chaqueta Elegante al carrito">
+                            <i class="fas fa-shopping-cart"></i> Añadir
+                        </button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="./imagenes/vestido.jpeg" alt="Vestido Casual" loading="lazy">
+                    <div class="product-info">
+                        <h3>Vestido Casual</h3>
+                        <p class="price">$59.99</p>
+                        <button class="add-to-cart" aria-label="Añadir Vestido Casual al carrito">
+                            <i class="fas fa-shopping-cart"></i> Añadir
+                        </button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="./imagenes/zapatos.jpeg" alt="Zapatos Deportivos" loading="lazy">
+                    <div class="product-info">
+                        <h3>Zapatos Deportivos</h3>
+                        <p class="price">$79.99</p>
+                        <button class="add-to-cart" aria-label="Añadir Zapatos Deportivos al carrito">
+                            <i class="fas fa-shopping-cart"></i> Añadir
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Síguenos en Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Síguenos en Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Síguenos en Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Síguenos en Pinterest"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Marcas Destacadas</h3>
+                <div class="brand-logos">
+                    <img src="./imagenes/marca.jpeg" alt="Marca 1" loading="lazy">
+                    <img src="./imagenes/marca 2.jpeg" alt="Marca 2" loading="lazy">
+                    <img src="./imagenes/marca 3.jpeg" alt="Marca 3" loading="lazy">
+                    <img src="./imagenes/marca 4.jpeg" alt="Marca 4" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
